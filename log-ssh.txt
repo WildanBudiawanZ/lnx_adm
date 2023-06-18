@@ -1,0 +1,98 @@
+-- Logs begin at Sun 2023-06-18 14:24:54 UTC, end at Sun 2023-06-18 14:50:50 UTC. --
+Jun 18 14:25:05 ip-172-31-22-65 systemd[1]: Starting OpenBSD Secure Shell server...
+Jun 18 14:25:05 ip-172-31-22-65 sshd[690]: Server listening on 0.0.0.0 port 22.
+Jun 18 14:25:05 ip-172-31-22-65 sshd[690]: Server listening on :: port 22.
+Jun 18 14:25:05 ip-172-31-22-65 systemd[1]: Started OpenBSD Secure Shell server.
+Jun 18 14:25:10 ip-172-31-22-65 ec2-instance-connect[1291]: Querying EC2 Instance Connect keys for matching fingerprint: SHA256:rwXvakz3Vh31/61js6hZycbJ/tfIIhQ17tGtQIVYoiE
+Jun 18 14:25:10 ip-172-31-22-65 ec2-instance-connect[1323]: Providing ssh key from EC2 Instance Connect with fingerprint: SHA256:rwXvakz3Vh31/61js6hZycbJ/tfIIhQ17tGtQIVYoiE, request-id: ddae6473-b294-45ec-9527-b06dbac0bb30, for IAM principal: arn:aws:iam::008202749889:root
+Jun 18 14:25:11 ip-172-31-22-65 ec2-instance-connect[1480]: Querying EC2 Instance Connect keys for matching fingerprint: SHA256:rwXvakz3Vh31/61js6hZycbJ/tfIIhQ17tGtQIVYoiE
+Jun 18 14:25:11 ip-172-31-22-65 ec2-instance-connect[1512]: Providing ssh key from EC2 Instance Connect with fingerprint: SHA256:rwXvakz3Vh31/61js6hZycbJ/tfIIhQ17tGtQIVYoiE, request-id: ddae6473-b294-45ec-9527-b06dbac0bb30, for IAM principal: arn:aws:iam::008202749889:root
+Jun 18 14:25:11 ip-172-31-22-65 sshd[1156]: Accepted publickey for ubuntu from 3.0.5.35 port 4141 ssh2: ED25519 SHA256:rwXvakz3Vh31/61js6hZycbJ/tfIIhQ17tGtQIVYoiE
+Jun 18 14:25:11 ip-172-31-22-65 sshd[1156]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Jun 18 14:31:47 ip-172-31-22-65 sshd[1736]: error: kex_exchange_identification: banner line contains invalid characters
+Jun 18 14:37:21 ip-172-31-22-65 sshd[1793]: Connection closed by authenticating user dicoding 127.0.0.1 port 38828 [preauth]
+Jun 18 14:41:57 ip-172-31-22-65 sshd[690]: Received signal 15; terminating.
+Jun 18 14:41:57 ip-172-31-22-65 systemd[1]: Stopping OpenBSD Secure Shell server...
+Jun 18 14:41:57 ip-172-31-22-65 systemd[1]: ssh.service: Succeeded.
+Jun 18 14:41:57 ip-172-31-22-65 systemd[1]: Stopped OpenBSD Secure Shell server.
+Jun 18 14:41:57 ip-172-31-22-65 systemd[1]: Starting OpenBSD Secure Shell server...
+Jun 18 14:41:57 ip-172-31-22-65 sshd[1825]: Server listening on 0.0.0.0 port 22.
+Jun 18 14:41:57 ip-172-31-22-65 sshd[1825]: Server listening on :: port 22.
+Jun 18 14:41:57 ip-172-31-22-65 systemd[1]: Started OpenBSD Secure Shell server.
+Jun 18 14:42:07 ip-172-31-22-65 sshd[1827]: Accepted password for dicoding from 127.0.0.1 port 39806 ssh2
+Jun 18 14:42:07 ip-172-31-22-65 sshd[1827]: pam_unix(sshd:session): session opened for user dicoding by (uid=0)
+Jun 18 14:45:21 ip-172-31-22-65 sshd[1980]: Connection closed by authenticating user dicoding 127.0.0.1 port 34620 [preauth]
+Jun 18 14:45:21 ip-172-31-22-65 sshd[1988]: AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys dicoding SHA256:cwxlbOVPtXFIeQ2c4XAifdxWyM1woSu2Efpj9cvJWGQ failed, status 22
+Jun 18 14:45:21 ip-172-31-22-65 sshd[1988]: Connection closed by authenticating user dicoding 127.0.0.1 port 34634 [preauth]
+Jun 18 14:45:21 ip-172-31-22-65 sshd[2013]: AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys dicoding SHA256:cwxlbOVPtXFIeQ2c4XAifdxWyM1woSu2Efpj9cvJWGQ failed, status 22
+Jun 18 14:45:25 ip-172-31-22-65 sshd[2013]: Accepted password for dicoding from 127.0.0.1 port 34644 ssh2
+Jun 18 14:45:25 ip-172-31-22-65 sshd[2013]: pam_unix(sshd:session): session opened for user dicoding by (uid=0)
+Jun 18 14:45:25 ip-172-31-22-65 sshd[2013]: pam_unix(sshd:session): session closed for user dicoding
+Jun 18 14:45:48 ip-172-31-22-65 sshd[2120]: Accepted publickey for dicoding from 127.0.0.1 port 48144 ssh2: RSA SHA256:cwxlbOVPtXFIeQ2c4XAifdxWyM1woSu2Efpj9cvJWGQ
+Jun 18 14:45:48 ip-172-31-22-65 sshd[2120]: pam_unix(sshd:session): session opened for user dicoding by (uid=0)
+Jun 18 14:47:41 ip-172-31-22-65 ec2-instance-connect[2355]: Querying EC2 Instance Connect keys for matching fingerprint: SHA256:vC6zD6FW377YG/6p3zpYE8EIUvAhQVWmsKL9uZYJqKo
+Jun 18 14:47:41 ip-172-31-22-65 ec2-instance-connect[2387]: Providing ssh key from EC2 Instance Connect with fingerprint: SHA256:vC6zD6FW377YG/6p3zpYE8EIUvAhQVWmsKL9uZYJqKo, request-id: 6b255171-5ae6-4a1f-8eea-56ad3a504b8a, for IAM principal: arn:aws:iam::008202749889:root
+Jun 18 14:47:41 ip-172-31-22-65 ec2-instance-connect[2530]: Querying EC2 Instance Connect keys for matching fingerprint: SHA256:vC6zD6FW377YG/6p3zpYE8EIUvAhQVWmsKL9uZYJqKo
+Jun 18 14:47:41 ip-172-31-22-65 ec2-instance-connect[2562]: Providing ssh key from EC2 Instance Connect with fingerprint: SHA256:vC6zD6FW377YG/6p3zpYE8EIUvAhQVWmsKL9uZYJqKo, request-id: 6b255171-5ae6-4a1f-8eea-56ad3a504b8a, for IAM principal: arn:aws:iam::008202749889:root
+Jun 18 14:47:41 ip-172-31-22-65 sshd[2220]: Accepted publickey for ubuntu from 3.0.5.37 port 27896 ssh2: ED25519 SHA256:vC6zD6FW377YG/6p3zpYE8EIUvAhQVWmsKL9uZYJqKo
+Jun 18 14:47:41 ip-172-31-22-65 sshd[2220]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Jun 18 14:48:45 ip-172-31-22-65 sshd[1825]: Received signal 15; terminating.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Stopping OpenBSD Secure Shell server...
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: ssh.service: Succeeded.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Stopped OpenBSD Secure Shell server.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Starting OpenBSD Secure Shell server...
+Jun 18 14:48:45 ip-172-31-22-65 sshd[2674]: /etc/ssh/sshd_config line 58: missing argument.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: ssh.service: Control process exited, code=exited, status=255/EXCEPTION
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: ssh.service: Failed with result 'exit-code'.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Failed to start OpenBSD Secure Shell server.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: ssh.service: Scheduled restart job, restart counter is at 1.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Stopped OpenBSD Secure Shell server.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Starting OpenBSD Secure Shell server...
+Jun 18 14:48:45 ip-172-31-22-65 sshd[2675]: /etc/ssh/sshd_config line 58: missing argument.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: ssh.service: Control process exited, code=exited, status=255/EXCEPTION
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: ssh.service: Failed with result 'exit-code'.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Failed to start OpenBSD Secure Shell server.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: ssh.service: Scheduled restart job, restart counter is at 2.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Stopped OpenBSD Secure Shell server.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Starting OpenBSD Secure Shell server...
+Jun 18 14:48:45 ip-172-31-22-65 sshd[2676]: /etc/ssh/sshd_config line 58: missing argument.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: ssh.service: Control process exited, code=exited, status=255/EXCEPTION
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: ssh.service: Failed with result 'exit-code'.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Failed to start OpenBSD Secure Shell server.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: ssh.service: Scheduled restart job, restart counter is at 3.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Stopped OpenBSD Secure Shell server.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Starting OpenBSD Secure Shell server...
+Jun 18 14:48:45 ip-172-31-22-65 sshd[2677]: /etc/ssh/sshd_config line 58: missing argument.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: ssh.service: Control process exited, code=exited, status=255/EXCEPTION
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: ssh.service: Failed with result 'exit-code'.
+Jun 18 14:48:45 ip-172-31-22-65 systemd[1]: Failed to start OpenBSD Secure Shell server.
+Jun 18 14:48:46 ip-172-31-22-65 systemd[1]: ssh.service: Scheduled restart job, restart counter is at 4.
+Jun 18 14:48:46 ip-172-31-22-65 systemd[1]: Stopped OpenBSD Secure Shell server.
+Jun 18 14:48:46 ip-172-31-22-65 systemd[1]: Starting OpenBSD Secure Shell server...
+Jun 18 14:48:46 ip-172-31-22-65 sshd[2678]: /etc/ssh/sshd_config line 58: missing argument.
+Jun 18 14:48:46 ip-172-31-22-65 systemd[1]: ssh.service: Control process exited, code=exited, status=255/EXCEPTION
+Jun 18 14:48:46 ip-172-31-22-65 systemd[1]: ssh.service: Failed with result 'exit-code'.
+Jun 18 14:48:46 ip-172-31-22-65 systemd[1]: Failed to start OpenBSD Secure Shell server.
+Jun 18 14:48:46 ip-172-31-22-65 systemd[1]: ssh.service: Scheduled restart job, restart counter is at 5.
+Jun 18 14:48:46 ip-172-31-22-65 systemd[1]: Stopped OpenBSD Secure Shell server.
+Jun 18 14:48:46 ip-172-31-22-65 systemd[1]: ssh.service: Start request repeated too quickly.
+Jun 18 14:48:46 ip-172-31-22-65 systemd[1]: ssh.service: Failed with result 'exit-code'.
+Jun 18 14:48:46 ip-172-31-22-65 systemd[1]: Failed to start OpenBSD Secure Shell server.
+Jun 18 14:49:32 ip-172-31-22-65 systemd[1]: Starting OpenBSD Secure Shell server...
+Jun 18 14:49:32 ip-172-31-22-65 sshd[2685]: Server listening on 0.0.0.0 port 22.
+Jun 18 14:49:32 ip-172-31-22-65 sshd[2685]: Server listening on :: port 22.
+Jun 18 14:49:32 ip-172-31-22-65 systemd[1]: Started OpenBSD Secure Shell server.
+Jun 18 14:49:41 ip-172-31-22-65 sshd[2688]: Accepted publickey for dicoding from 127.0.0.1 port 60394 ssh2: RSA SHA256:cwxlbOVPtXFIeQ2c4XAifdxWyM1woSu2Efpj9cvJWGQ
+Jun 18 14:49:41 ip-172-31-22-65 sshd[2688]: pam_unix(sshd:session): session opened for user dicoding by (uid=0)
+Jun 18 14:50:01 ip-172-31-22-65 sshd[2685]: Received signal 15; terminating.
+Jun 18 14:50:01 ip-172-31-22-65 systemd[1]: Stopping OpenBSD Secure Shell server...
+Jun 18 14:50:01 ip-172-31-22-65 systemd[1]: ssh.service: Succeeded.
+Jun 18 14:50:01 ip-172-31-22-65 systemd[1]: Stopped OpenBSD Secure Shell server.
+Jun 18 14:50:01 ip-172-31-22-65 systemd[1]: Starting OpenBSD Secure Shell server...
+Jun 18 14:50:01 ip-172-31-22-65 sshd[2787]: Server listening on 0.0.0.0 port 2000.
+Jun 18 14:50:01 ip-172-31-22-65 sshd[2787]: Server listening on :: port 2000.
+Jun 18 14:50:01 ip-172-31-22-65 systemd[1]: Started OpenBSD Secure Shell server.
+Jun 18 14:50:15 ip-172-31-22-65 sshd[2789]: Accepted publickey for dicoding from 127.0.0.1 port 51168 ssh2: RSA SHA256:cwxlbOVPtXFIeQ2c4XAifdxWyM1woSu2Efpj9cvJWGQ
+Jun 18 14:50:15 ip-172-31-22-65 sshd[2789]: pam_unix(sshd:session): session opened for user dicoding by (uid=0)
+Jun 18 14:50:37 ip-172-31-22-65 sshd[2886]: Accepted publickey for dicoding from 127.0.0.1 port 34804 ssh2: RSA SHA256:cwxlbOVPtXFIeQ2c4XAifdxWyM1woSu2Efpj9cvJWGQ
+Jun 18 14:50:37 ip-172-31-22-65 sshd[2886]: pam_unix(sshd:session): session opened for user dicoding by (uid=0)
